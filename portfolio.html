@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Bultut Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+       <!-- <h1>Brian Bultut Chepyegon</h1>-->
+        <div id="header"> 
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li> 
+                    </ul>
+                </nav>
+                <div class="start-text">
+                    <p>Data Scientist</p>
+                    <h1> Hy, I'm <span2>Bul</span2><span>tut</span><br> from Kenya </h1>
+                </div>
+
+            </div>
+        </div>
+        <div id="about">
+            <div class="content">
+                <div class="myself">
+                    <div class="about-1">
+                        <img src="images/bultut.png" alt="None">
+                    </div>
+                    <div class="about-2">
+                        <h3 class="brief">About Me</h3>
+                        <p>Hi, I am Brian Bultut chpeyegon.<br>I grew up in Baringo county, Kenya, attended <span>Kabarnet High School</span>,<br> currently studying in <span>Dedan Kimathi University of Technology</span>.<br>I'm a <span2>Data Scientist</span2>.<br>Also a <span2>CyberSecurity Analyst</span2>.<br>I aslo design chatbots in my free time.<br> My hobby is playing football and travelling. </p>
+                        <div class="titles">
+                            <p class="power active" onclick="opentab('skills')">Skills</p>
+                            <p class="power" onclick="opentab('projects')">Projects</p>
+                            <p class="power" onclick="opentab('education')">Education</p>
+                            <p class="power" onclick="opentab('contact')">Contact</p>
+
+                            </div>
+                            <div class="title-content active-site" id="skills">
+                                <ul>
+                                    <li><span>Data Scientist</span><br>Analysing data using python language</li>
+                                    <li><span>Web Developer</span><br>Developing robust web applications</li>
+                                    <li><span>CyberSecurity Analyst</span><br>Providing insights to various cyber threats</li>
+                                </ul>
+                            </div>
+                            <div class="title-content" id="projects">
+                                <ul>
+                                    <li><span>Java project</span><br>https://github.com/Bultut-yegon/Arithmetic.git</li>
+                                    <li><span>python</span><br>https://github.com/Bultut-yegon/Datapy.git</li>
+                                    <li><span>Software devproject</span><br>https://github.com/Bultut-yegon/zero_day.git</li>
+                                </ul>
+                            </div>
+                            <div class="title-content" id="education">
+                                <ul>
+                                    <li><span>2022-Date</span><br>Dedan Kimathi University</li>
+                                    <li><span>2018-2021</span><br>Kabarnet High School</li>
+                                    <li><span>2009-2017</span><br>Chebarsiat Primary </li>
+                                </ul>
+                            </div>
+                            <div class="title-content" id="contact">
+                                <ul>
+                                    <li><span>email</span><br>bultutyegonn@gmail.com</li>
+                                    <li><span>Phone number</span><br>+254798134566</li>
+                                    <li><span>linkedIn</span><br>https://www.linkedin.com/in/Brian-Bultut-Chepeyegon</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var linkpowers= document.getElementsByClassName("power");
+            var linktitles= document.getElementsByClassName("title-content");
+            function opentab(title){
+                for(linkpower of linkpowers){
+                    linkpower.classList.remove("active");
+                }
+                for(linktitle of linktitles){
+                    linktitle.classList.remove("active-site");
+                }
+                event.currentTarget.classList.add("active");
+                document.getElementById(title).classList.add("active-site");
+            }
+        </script>
+
+    </body>
+</html> 

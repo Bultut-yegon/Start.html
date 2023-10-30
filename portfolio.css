@@ -1,0 +1,128 @@
+*{
+    color: white;
+    font-family:'poppins',sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/this.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 10px 10px;
+}
+nav {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: gray;
+    position: absolute;
+    bottom: -10px;
+    transition: .4s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.start-text{
+    margin-top: 10%;
+    font-size: 50px;
+}
+.start-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+span{
+    color: rgb(0, 60, 255);
+}
+span2{
+    color: rgb(255, 123, 0);
+}
+#about{
+    padding: 10px 0;
+    color: black;
+}
+.myself{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+.about-1{
+    flex-basis: 90px;
+}
+.about-1 img{
+    width: 160%;
+    border-radius: 15px;
+}
+.about-2{
+    flex-basis: 60%;
+}
+.brief{
+    font-size: 50px;
+    font-weight: 500;
+    color: chartreuse;
+}
+.titles{
+    display: flex;
+    margin: 20px 0 30px;
+}
+.power{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.titles::after{
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: -9px;
+    background: blue;
+    height: 3px;
+    position:absolute;
+    transition: .5s;
+}
+.power.active:hover::after{
+    width: 90%;
+}
+.title-content ul li{
+    margin: 10px 0;
+    list-style: none;
+}
+.title-content ul li span{
+    color: gold;
+    font-size: 16px;
+}
+.title-content{
+    display: none;
+}
+.title-content.active-site{
+    display: block;
+}
